@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import { Header } from '../components/Header'
 import { Main } from '../components/Main'
+import Security from '../components/Security'
 
 export const query = graphql`
 query {
@@ -58,6 +59,7 @@ export default function Index({ data }) {
               imagemain={dataMain.gif.url}
               imgmain={dataMain.imagemain.url}
             />
+            <Security />
         </div>
     )
 }
